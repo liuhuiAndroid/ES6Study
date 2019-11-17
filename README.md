@@ -81,8 +81,66 @@ touch tasks/server.js # 处理服务器脚本
 
 ####  2-5 文件自动监听，项目构建测试 
 
+```shell
+touch tasks/browser.js # 浏览器监听
+touch tasks/clean.js # 清空指定文件的任务
+npm install gulp-live-server del gulp-util --save-dev # 安装包
+touch tasks/build.js # 串联所有任务
+touch tasks/default.js # gulp 不带参数会直接执行此脚本
+
+gulp # 执行报错，需要gulpfile.babel.js
+npm install babel-loader babel-core babel-preset-env webpack --save-dev
+touch gulpfile.babel.js
+npm install require-dir --save-dev
+gulp # 执行报错
+touch .babelrc # 配置
+npm install babel-preset-es2015 --save-dev
+npm install gulp-sequence --save-dev
+gulp # 运行成功
+gulp --watch # 运行成功
+# 访问localhost:3000
+vi app/views/index.ejs # 刷新浏览器
+
+npm install connect-livereload --save-dev
+server/app.js 添加：app.use(require('connect-livereload')()); # 此时热更新才生效
+
+vi app/js/index.js # 此时js也可以自动刷新
+```
+
 ## 第3章 es6语法
 
-####  3-1 let.const命令 
+#### 3-1 let.const命令
 
-#### 
+#### 3-2 解构赋值
+
+#### 3-3 正则扩展
+
+#### 3-4 字符串扩展
+
+#### 3-6 数值扩展
+
+#### 3-7 数组扩展
+
+#### 3-8 函数扩展
+
+#### 3-9 对象扩展
+
+#### 3-10 Symbol用法
+
+#### 3-11 set-map数据结构
+
+#### 3-12 map-set与数组和对象的比较
+
+#### 3-13 Proxy和Reflect
+
+#### 3-14 类与对象
+
+#### 3-15 Promise
+
+#### 3-16 Iterator
+
+#### 3-17 Generator
+
+#### 3-18 Decorators
+
+#### 3-19 Module模块化
