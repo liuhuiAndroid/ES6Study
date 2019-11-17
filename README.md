@@ -63,9 +63,21 @@ touch gulpfile.babel.js
 
 ####  2-3 命令行处理，创建JS编译任务脚本 
 
-
+```shell
+touch tasks/util/args.js
+touch tasks/scripts.js
+npm install gulp gulp-if gulp-concat webpack webpack-stream vinyl-named gulp-livereload gulp-plumber gulp-rename gulp-uglify gulp-util yargs --save-dev # 安装包
+# 注意使用npm镜像解决网速慢的问题
+# scripts.js作用：js构建
+```
 
 ####  2-4 创建模板、服务任务脚本 
+
+```shell
+touch tasks/pages.js # 处理模板
+touch tasks/css.js # 处理CSS
+touch tasks/server.js # 处理服务器脚本
+```
 
 ####  2-5 文件自动监听，项目构建测试 
 
