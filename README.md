@@ -109,13 +109,47 @@ vi app/js/index.js # 此时js也可以自动刷新
 
 ## 第3章 es6语法
 
-#### 3-1 let.const命令
+#### 3-1 let.const
+
+1. 作用域的概念
+
+2. 如何使用let和const
+
+3. ```shell
+   touch app/js/class/lesson1.js
+   index.js中引入lesson1.js
+   gulp --watch 
+   ```
 
 #### 3-2 解构赋值
 
+1. 什么是解构赋值
+
+2. 解构赋值的分类
+
+   数组解构赋值	对象解构赋值	字符串解构赋值
+
+   布尔值解构赋值	函数参数解构赋值	数值解构赋值
+
 #### 3-3 正则扩展
 
+1. 正则新增特性
+
+2. 构造函数的变化、正则方法的扩展、u修饰符、y修饰符、s修饰符
+
+   看不懂，跳过
+
 #### 3-4 字符串扩展
+
+1. 字符串新增特性
+2. Unicode表示法  遍历接口  模板字符串  新增方法
+
+```shell
+npm install babel-polyfill --save-dev # 安装babel-polyfill 库，兼容ES6补丁方法
+index.js import 'babel-polyfill';
+```
+
+
 
 #### 3-6 数值扩展
 
