@@ -32,20 +32,16 @@
     a:'c',
     b:'c'
   };
-
   let es6_obj={
     [a]:'c'
   }
-
   console.log(es5_obj,es6_obj);
-
 }
 
 {
   // 新增API
-  console.log('字符串',Object.is('abc','abc'),'abc'==='abc');
+  console.log('字符串',Object.is('abc','abc'),'abc'==='abc'); // 功能上一样
   console.log('数组',Object.is([],[]),[]===[]);
-
   console.log('拷贝',Object.assign({a:'a'},{b:'b'}));
 
   let test={k:123,o:456};
