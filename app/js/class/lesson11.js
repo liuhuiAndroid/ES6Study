@@ -1,10 +1,11 @@
 {
+  // 原始对象
   let obj={
     time:'2017-03-11',
     name:'net',
     _r:123
   };
-
+  // 代理对象
   let monitor=new Proxy(obj,{
     // 拦截对象属性的读取
     get(target,key){

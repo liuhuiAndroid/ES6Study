@@ -167,13 +167,28 @@ index.js import 'babel-polyfill';
 
 函数新增特性：简洁表示法、属性表达式、扩展运算符、Object新增方法
 
-#### 3-10 Symbol用法
+#### 3-10 Symbol用法 lesson9.js
+
+1. Symbol的概念
+2. Symbol的作用
 
 #### 3-11 set-map数据结构
 
+1. Set的用法
+2. WeakSet的用法
+3. Map的用法
+4. WeakMap的用法
+
 #### 3-12 map-set与数组和对象的比较
 
-#### 3-13 Proxy和Reflect
+1. Map与Array的对比
+2. Set与Array的对比
+3. 建议多使用Map少使用Array，要求唯一性考虑使用Set，放弃使用Object
+
+#### 3-13 Proxy和Reflect lesson11.js 待看
+
+1. Proxy和Reflect的概念
+2. Proxy和Reflect的适用场景
 
 #### 3-14 类与对象
 
